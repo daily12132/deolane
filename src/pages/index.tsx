@@ -211,13 +211,12 @@ export default function Home() {
             </div>
 
             <div className="w-full flex justify-start p-4 flex-shrink-0">
-              <div className="flex flex-col items-center gap-1 flex-shrink-0">
+              <div className="w-[60px] h-[60px] flex flex-col items-center gap-1">
                 <Image
-                  alt="profile"
                   src={Image3}
+                  alt="Imagem1"
                   quality={100}
-                  width={60}
-                  className="rounded-[50%] border-2 border-white object-cover flex-shrink-0"
+                  className="w-full h-full object-cover rounded-[50%] border-2 border-white"
                 />
                 <p className="text-xs">OF</p>
               </div>

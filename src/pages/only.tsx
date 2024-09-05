@@ -8,7 +8,7 @@ import { ArrowLeft, Share } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 import Logo from '../../public/favicon.svg'
 import { FadeLoader } from 'react-spinners'
-import Blur from '../../public/blur.jpg'
+import Blur from '../../public/blur.png'
 import Link from 'next/link'
 
 const fonte = Roboto({
@@ -72,23 +72,22 @@ export default function Home() {
             </div>
             <div className="w-full p-4">
               <div className="flex justify-between">
-                <div className="w-[96px] relative flex-shrink-0">
+                <div className="w-[100px] h-[100px] relative">
                   <Image
                     src={Img2}
                     alt="Imagem1"
                     quality={100}
-                    width={96}
-                    className="absolute flex-shrink-0 left-0 top-[-50px] rounded-[50%] border-2 border-white"
+                    className="w-full h-full object-cover absolute left-0 top-[-50px] rounded-[50%] border-2 border-white"
                   />
-                  <div className="absolute top-7 right-1 w-[15px] h-[15px] bg-green-500 rounded-full border-2 border-white" />
+                  <div className="absolute top-7 right-2 w-[15px] h-[15px] bg-green-500 rounded-full border-2 border-white" />
                 </div>
 
-                <div className="p-[10px] border border-[#e3e6e9] rounded-full">
+                <div className="h-[50px] flex items-center p-[10px] border border-[#e3e6e9] rounded-full">
                   <Share size={24} color="#00aff0" weight="bold" />
                 </div>
               </div>
 
-              <div className="mt-6 flex flex-col gap-2">
+              <div className="mt-[-30px] flex flex-col gap-2">
                 <div>
                   <h2 className="text-[19px] leading-[24px]">
                     DEONALE BEZERRA
@@ -120,13 +119,12 @@ export default function Home() {
               <p className="text-black">Oferta limitada: 50% de desconto.</p>
 
               <div className="flex items-star mt-5 mb-6">
-                <div className="w-[47px] h-[47px] relative flex-shrink-0">
+                <div className="w-[47px] h-[47px] relative">
                   <Image
                     src={Img2}
                     alt="Imagem1"
                     quality={100}
-                    width={47}
-                    className="rounded-[50%] absolute ml-2 z-10 border-2 border-white flex-shrink-0"
+                    className="w-ful h-full object-cover rounded-[50%] absolute ml-3 z-10 border-2 border-white"
                   />
                   <div className="absolute bottom-0 left-[47px] z-50 w-[12px] h-[12px] bg-green-500 rounded-full border-2 border-white" />
                 </div>
